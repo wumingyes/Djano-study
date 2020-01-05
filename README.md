@@ -1,3 +1,4 @@
-# hello-world
-My first Repository!
-Today is 2020/1/5.
+# Django-study
+Django学习
+我的第一个Github
+

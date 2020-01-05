@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Log-in
+{% endblock title %}
+
+{% block content %}
+	<h1>Log-in</h1>
+	<hr>
+	<p>Please,use the following form to log-in:</p>
+	<form action="." method="post">
+		<fieldset class="form-group">
+			<label for="username">Username:</label>
+			<input type="text" class="form-control" id="username" placeholder="Enter username" style="width:30%" name="username" required="true">
+		</fieldset>
+		<fieldset class="form-group">
+			<label for="password">Password:</label>
+			<input style="width:30%" type="password" class="form-control" id="password" placeholder="Enter password" name="password" required="true">
+		</fieldset>
+		{% csrf_token %}
+		<button type="submit" class="btn btn-primary">Log-in</button>
+	</form>
+{% endblock content %}
